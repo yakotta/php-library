@@ -1,4 +1,5 @@
 <?php
+namespace Yakotta\Library;
 
 class String {
     // Removes all spaces and funky characters from a string

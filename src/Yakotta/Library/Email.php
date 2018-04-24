@@ -1,4 +1,5 @@
 <?php
+namespace Yakotta\Library;
 
 class Email {
     // Sends emails from forms

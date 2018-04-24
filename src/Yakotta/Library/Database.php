@@ -1,11 +1,6 @@
 <?php
-/**
- * class: Database
- * 
- * A class which controls access to our database
- * 
- * help: https://phpdelusions.net/pdo
- */
+namespace Yakotta\Library;
+
 class Database
 {
     // Introduces the $connection member variable

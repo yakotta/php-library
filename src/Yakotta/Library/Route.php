@@ -1,4 +1,5 @@
 <?php
+namespace Yakotta\Library;
 
 class Route {
     // Redirect function

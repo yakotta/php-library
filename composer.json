@@ -8,5 +8,7 @@
             "email": "pinkhamjenna@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": { "Yakotta\\": "src/" }
+    }
 }

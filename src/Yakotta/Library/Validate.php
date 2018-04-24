@@ -1,4 +1,5 @@
 <?php
+namespace Yakotta\Library;
 
 class Validate {
     // Verifies if an input is a string
