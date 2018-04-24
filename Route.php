@@ -21,14 +21,7 @@ class Route {
     
     // I stole this code from: https://stackoverflow.com/a/30359808/279147
     static public function match($pattern, $callback)
-    {
-        /*
-        // Jenna: this function is pretty dammed complicated, please don't attempt to read
-        // and understand it alone :) I don't want to confuse you even more with a bunch of
-        // stuff which is pretty advanced, I would rather you just use this like a black box
-        // until we have time to get through it together
-        */
-    
+    {    
         if(!is_callable($callback)){
             throw new Exception("Callback passed to match route must be valid");
         }
