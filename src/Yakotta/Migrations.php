@@ -1,5 +1,5 @@
 <?php
-namespace Yakotta\Library;
+namespace Yakotta;
 
 class Migrations {
     // Checks migrations in the database

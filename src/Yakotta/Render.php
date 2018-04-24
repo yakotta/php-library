@@ -1,5 +1,5 @@
 <?php
-namespace Yakotta\Library;
+namespace Yakotta;
 
 class Render {
     // Renders templates

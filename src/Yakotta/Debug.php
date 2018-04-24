@@ -1,5 +1,5 @@
 <?php
-namespace Yakotta\Library;
+namespace Yakotta;
 
 class Debug {
     // Preformats the var dump function
