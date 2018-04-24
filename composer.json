@@ -1,0 +1,12 @@
+{
+    "name": "yakotta/php-library",
+    "description": "yakotta library for php",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jenna Pinkham",
+            "email": "pinkhamjenna@gmail.com"
+        }
+    ],
+    "require": {}
+}
