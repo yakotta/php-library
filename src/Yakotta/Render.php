@@ -2,6 +2,8 @@
 namespace Yakotta;
 
 class Render {
+    static public $templateDir = false;
+    
     // Renders templates
     static public function template($template_name, $template_parameters=[])
     {
@@ -20,14 +22,14 @@ class Render {
     
     // Renders pages
     static public function page($template,$params=[]){
-        $file = __DIR__."/../templates/$template";
+        $file = self::$templateDir."/$template";
     
         if(is_file($file)){
-            die(Render::template(__DIR__."/../templates/page_skeleton.php", [
+            die(Render::template(self::$templateDir."/page_skeleton.php", [
                 "content" => Render::template($file,$params)
             ]));
         } else {
-            die(Render::template(__DIR__."/../templates/error_404.php", [
+            die(Render::template(self::$templateDir."/error_404.php", [
                 "error" => "Error 404: '$template' page not found :("
             ]));
         }
@@ -35,7 +37,7 @@ class Render {
     
     // Renders admin pages
     static public function admin_page($template,$params=[]){
-        $file = __DIR__."/../templates/$template";
+        $file = self::$templateDir."/$template";
     
         if(is_file($file)){
             $template = Render::template($file,$params);
@@ -43,7 +45,7 @@ class Render {
             $template = "Error: Cannot locate the template '$template'.";
         }
     
-        die(Render::template(__DIR__."/../templates/admin_skeleton.php", [
+        die(Render::template(self::$templateDir."/admin_skeleton.php", [
             "content" => $template
         ]));
     }
